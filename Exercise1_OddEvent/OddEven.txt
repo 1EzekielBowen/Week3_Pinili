@@ -1,0 +1,30 @@
+namespace OddEven
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int number = Convert.ToInt32(textBox1.Text);
+            if (number == 0) {
+                label2.Text = "The number is zero.";
+                label2.Show();
+            } else if (number % 2 == 0) {
+                label2.Text = "The number is even.";
+                label2.Show();
+            } else {
+                label2.Text = "The number is odd.";
+                label2.Show();
+            }
+        }
+    }
+}

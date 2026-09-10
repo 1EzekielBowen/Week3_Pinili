@@ -1,0 +1,27 @@
+namespace PosNeg
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            double integer = Convert.ToDouble(textBox1.Text);
+            if (integer > 0)
+            {
+                label2.Text = "Positive";
+            }
+            else if (integer < 0)
+            {
+                label2.Text = "Negative";
+            }
+            else
+            {
+                label2.Text = "Zero";
+            }
+        }
+    }
+}
